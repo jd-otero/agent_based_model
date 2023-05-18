@@ -50,7 +50,7 @@ bool Mosquito::bite(float _biteProbability)
             int temp = biteProb(gen);
             if (temp < _biteProbability * 1000)
             {
-                // if bites update bite count
+                // if bites, update bite count
                 updateNumberOfBites();
                 output = true;
             }

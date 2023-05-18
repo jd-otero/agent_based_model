@@ -571,6 +571,7 @@ void Simulation::simulate()
             list<int> mosquitoesToDelete = deathRate(tempEnvironment, deadMosquitoes, infectedM);
             deleteMosquitoes(mosquitoesToDelete, tempEnvironment);
             addMosquitoes(mosquitoesCount, tempEnvironment, newMosquitoes, (int)daysOv90Data[day][1]);
+            
             // Global mosquito count
             mosquitoesCount += newMosquitoes;
             tempEnvironment->changeCampaignState(0);

@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// HCP run
 // int main(int argc, char *argv[])
 // {
 //     int nDays = 365;
@@ -21,13 +22,14 @@ using namespace std;
 //     return 0;
 // };
 
+// Local run
 int main()
 {
     int nDays = 360;
     bool insecticideIntervention = false;
-    bool containerIntervention = true;
+    bool containerIntervention = false;
     bool netIntervention = false;
-    float sensitivity = 0.1;
+    float sensitivity = 0.0;
     string outputFile = "data/out_test.csv";
     string outputMosquitoFile = "data/out_mos_test.csv";
 
